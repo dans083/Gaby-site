@@ -1,0 +1,182 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* --- FUNDO (MESMO PARA AS 2 PÁGINAS) --- */
+body {
+    background-image: url('fundo.jpg'); /* fundo único */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; /* fundo parado */
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+/* ==================== */
+/*      PÁGINA 1        */
+/* ==================== */
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(4px);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #ff2b5f;
+    text-shadow: 0 0 10px #ff2b5f;
+}
+
+header p {
+    color: #e8e8e8;
+}
+
+/* Sessões */
+section {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    backdrop-filter: blur(5px);
+}
+
+/* Fotos lado a lado (página 1) */
+.lado-a-lado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ff2b5f;
+    box-shadow: 0 0 10px #ff2b5f;
+}
+
+/* Letra da música */
+.musica h2 {
+    text-align: center;
+    color: #ff2b5f;
+    margin-bottom: 15px;
+    text-shadow: 0 0 6px #ff2b5f;
+}
+
+.caixa-letra {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 3px solid #ff2b5f;
+    border-right: 3px solid #ff2b5f;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Botão principal */
+.btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-especial {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e41e64;
+    border: 2px solid #e41e64;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px #e41e64;
+    transition: 0.3s;
+}
+
+.btn-especial:hover {
+    background: rgba(255, 0, 100, 0.2);
+    box-shadow: 0 0 15px #e41e64;
+    transform: scale(1.05);
+}
+
+
+
+/* ==================== */
+/*      PÁGINA 2        */
+/* ==================== */
+
+/* Fundo mantém o mesmo */
+/* bg-orochi agora só mantém organização */
+.bg-orochi { }
+
+/* Cabeçalho da página 2 */
+.header-orochi {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 3px solid #e41e64;
+    border-right: 3px solid #e41e64;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.header-orochi h1 {
+    font-size: 2rem;
+    color: #e41e64;
+}
+
+.header-orochi p {
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Grade de fotos 2x2 */
+.grid-fotos-orochi {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+.grid-fotos-orochi img {
+    width: 100%;
+    max-width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #e41e64;
+    box-shadow: 0 0 12px #e41e64;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-fotos-orochi img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px #ff2b7c;
+}
+
+/* Rodapé da segunda página */
+.footer-orochi {
+    text-align: center;
+    margin-top: 30px;
+}
